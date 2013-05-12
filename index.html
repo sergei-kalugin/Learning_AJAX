@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>AJAX Hint</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Sergey Kalugin" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<style>
+			#test {
+				font-family: Georgia;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Country hint (HTML+JavaScript+PHP)</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="#">Home</a>
+				</p>
+				<p>
+					<a href="#">Contact</a>
+				</p>
+			</nav>
+
+			<div id="test">
+				<h2>Let's create a hint</h2>
+			</div>
+			<form>
+				<label for="first-name">First Name:</label>
+				<input type="text" name="first-name" id="txt1" onkeyup="showHint(this.value)" />
+			</form>
+			<p>Suggestions: <span id="txt-hint"></span></p>
+			
+			<footer>
+				<p>
+					&copy; Copyright  by Sergey Kalugin
+				</p>
+			</footer>
+		</div>
+		<script src="hint.js"></script>
+	</body>
+</html>
